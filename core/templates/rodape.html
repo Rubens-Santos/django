@@ -1,0 +1,66 @@
+{% load static %}
+
+<footer id="footer" class="footer-area section-padding">
+      <div class="container">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="footer-logo"><img src="assets/img/logo.png" alt=""></h3>
+                <div class="textwidget">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et euismod purus suscipit quis.</p>
+                </div>
+                <div class="social-icon">
+                  <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
+                  <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
+                  <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
+                  <a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <h3 class="footer-titel">Serviços</h3>
+              <ul class="footer-link">
+                {% for s in servicos %}
+                <li><a href="#services">{{ s.servico }}</a></li>
+
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <h3 class="footer-titel">Recursos</h3>
+              <ul class="footer-link">
+                {% for r in recursos %}
+                <li><a href="#">{{ r.recurso }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <h3 class="footer-titel">Contato</h3>
+              <ul class="address">
+                <li>
+                  <a href="#"><i class="lni-map-marker"></i> Av. Santo Afonso, 833 - <br> São Paulo, SP</a>
+                </li>
+                <li>
+                  <a href="#"><i class="lni-phone-handset"></i> P: +55 11 98565-2934</a>
+                </li>
+                <li>
+                  <a href="#"><i class="lni-envelope"></i> E: rubens.s.augusto@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-content">
+                <p>Copyright © 2020 <a rel="nofollow" href="https://uideck.com">UIdeck</a> Todos os Direitos Reservados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
