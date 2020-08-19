@@ -145,10 +145,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Email produção
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #EMAIL_HOST = 'smtp.gmail.com'
-#EMAIL_HOST_USER = 'rubens.s.augusto@gmail.com'
+#EMAIL_HOST_USER = ''
 #EMAIL_PORT = 587
 #EMAIL_USER_TSL = True
-#EMAIL_HOST_PASSWORD = 'marvelpath@ssf4ae'
+#EMAIL_HOST_PASSWORD = ''
 #DEFAULT_FROM_EMAIL = 'contato@rubensdev.com.br'
 
 LOGOUT_REDIRECT_URL = 'index' #ao sair da area de adm redireciona para a pagina inicial da aplicação
